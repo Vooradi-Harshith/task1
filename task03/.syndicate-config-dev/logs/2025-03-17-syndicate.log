@@ -1,0 +1,522 @@
+2025-03-17 19:07:04,252 [INFO] USER:vooradi_harshith generate.py:72:project LOG: Project name: task03
+2025-03-17 19:07:04,252 [INFO] USER:vooradi_harshith generate.py:79:project LOG: Project path: C:\
+2025-03-17 19:07:04,256 [INFO] USER:vooradi_harshith project.py:77:generate_project_structure LOG: Project task03 folder has been successfully created.
+2025-03-17 19:07:04,256 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage project, elapsed time: 0:00:00.004130
+2025-03-17 19:07:40,982 [INFO] USER:vooradi_harshith s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-17 19:07:40,985 [INFO] USER:vooradi_harshith s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-6675'
+2025-03-17 19:07:40,986 [INFO] USER:vooradi_harshith helper.py:525:convert LOG: Stripping run_id:JAP-11,run_type:stm,type:user,user_id:2034f917 from "," a bit..
+2025-03-17 19:07:40,986 [INFO] USER:vooradi_harshith helper.py:529:convert LOG: Converting: run_id:JAP-11,run_type:stm,type:user,user_id:2034f917 to dict..
+2025-03-17 19:07:40,986 [INFO] USER:vooradi_harshith helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-11', 'run_type': 'stm', 'type': 'user', 'user_id': '2034f917'}
+2025-03-17 19:07:42,542 [WARNING] USER:vooradi_harshith generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-17 19:07:42,543 [ERROR] USER:vooradi_harshith __init__.py:44:_mkdir LOG: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\.syndicate-config-dev'
+2025-03-17 19:07:42,543 [WARNING] USER:vooradi_harshith generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:07:42,548 [INFO] USER:vooradi_harshith generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:07:42,550 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage config, elapsed time: 0:00:01.564717
+2025-03-17 19:08:07,481 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:08:09,620 [WARNING] USER:vooradi_harshith __init__.py:190:initialize_project_state LOG: [93mConfig is set and generated but project state does not exist, seems that you've come from the previous version.[0m
+2025-03-17 19:08:09,621 [WARNING] USER:vooradi_harshith __init__.py:193:initialize_project_state LOG: [93mGenerating project state file (.syndicate) from the existing structure...[0m
+2025-03-17 19:08:09,623 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:08:10,801 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:08:10,802 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:08:11,176 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:08:11,176 [INFO] USER:vooradi_harshith helper.py:658:check_lambda_name LOG: Validating lambda name: 'hello_world'
+2025-03-17 19:08:11,176 [INFO] USER:vooradi_harshith helper.py:673:check_lambda_name LOG: Lambda name: 'hello_world' passed the validation
+2025-03-17 19:08:11,177 [INFO] USER:vooradi_harshith helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-17 19:08:11,177 [INFO] USER:vooradi_harshith helper.py:651:resolve_project_path LOG: Path: 'C:/Users/vooradi_harshith/task1/task1/task03' was assigned to the parameter: 'project_path'
+2025-03-17 19:08:11,178 [INFO] USER:vooradi_harshith generate.py:116:lambda_function LOG: Lambda names: ('hello_world',)
+2025-03-17 19:08:11,178 [INFO] USER:vooradi_harshith generate.py:117:lambda_function LOG: Runtime: nodejs
+2025-03-17 19:08:11,178 [INFO] USER:vooradi_harshith generate.py:118:lambda_function LOG: Project path: C:/Users/vooradi_harshith/task1/task1/task03
+2025-03-17 19:08:11,189 [INFO] USER:vooradi_harshith lambda_function.py:464:_generate_nodejs_lambdas LOG: Lambda hello_world created
+2025-03-17 19:08:11,197 [INFO] USER:vooradi_harshith lambda_function.py:169:generate_lambda_function LOG: Lambda hello_world has been successfully added to the project.
+2025-03-17 19:08:11,198 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage lambda_function, elapsed time: 0:00:00.020284
+2025-03-17 19:09:07,226 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:09:09,411 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:09:10,896 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:09:10,896 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:09:11,250 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:09:11,250 [INFO] USER:vooradi_harshith helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-17 19:09:11,251 [INFO] USER:vooradi_harshith helper.py:651:resolve_project_path LOG: Path: 'C:/Users/vooradi_harshith/task1/task1/task03' was assigned to the parameter: 'project_path'
+2025-03-17 19:09:11,252 [INFO] USER:vooradi_harshith base_generator.py:223:_validate_resource_name LOG: Validating resource name: 'task3_api'
+2025-03-17 19:09:11,253 [INFO] USER:vooradi_harshith base_generator.py:239:_validate_resource_name LOG: Resource name: 'task3_api' passed the validation
+2025-03-17 19:09:11,253 [WARNING] USER:vooradi_harshith base_generator.py:182:write LOG: Root "deployment_resources.json" wasn't found. Creating the one...
+2025-03-17 19:09:11,258 [INFO] USER:vooradi_harshith base_generator.py:67:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/vooradi_harshith/task1/task1/task03'
+2025-03-17 19:09:11,258 [INFO] USER:vooradi_harshith base_generator.py:87:_find_resources_by_type LOG: Looking for resource 'api_gateway' in meta
+2025-03-17 19:09:11,259 [INFO] USER:vooradi_harshith base_generator.py:93:_find_resources_by_type LOG: Found '{'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\deployment_resources.json': set(), 'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\app\\lambdas\\hello_world\\deployment_resources.json': set()}' inside with type 'api_gateway'
+2025-03-17 19:09:11,259 [INFO] USER:vooradi_harshith base_generator.py:103:_get_resource_meta_paths LOG: Looking for api_gateway 'task3_api' in meta...
+2025-03-17 19:09:11,259 [INFO] USER:vooradi_harshith base_generator.py:108:_get_resource_meta_paths LOG: Found api_gateway 'task3_api' in these files: '[]'
+2025-03-17 19:09:11,259 [INFO] USER:vooradi_harshith base_generator.py:217:_find_file_with_duplicate LOG: No duplicated api_gateway with name 'task3_api' was found
+2025-03-17 19:09:11,259 [INFO] USER:vooradi_harshith base_generator.py:152:generate_deployment_resource LOG: Generating deployment resources for api_gateway 'task3_api'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:160:_generate_resource_configuration LOG: Generating configuration for api_gateway 'task3_api'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:57:_resolve_configuration LOG: Setting given value 'api' for param 'deploy_stage'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'dependencies'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'resources'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-03-17 19:09:11,260 [INFO] USER:vooradi_harshith base_generator.py:202:write LOG: Writing deployment resources for api_gateway 'task3_api' to the file 'C:\Users\vooradi_harshith\task1\task1\task03\deployment_resources.json'
+2025-03-17 19:09:11,262 [INFO] USER:vooradi_harshith meta.py:264:api_gateway LOG: Api gateway 'task3_api' was added successfully
+2025-03-17 19:09:11,262 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage api_gateway, elapsed time: 0:00:00.009808
+2025-03-17 19:09:16,948 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:09:19,140 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:09:20,237 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:09:20,237 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:09:20,576 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:09:20,576 [INFO] USER:vooradi_harshith helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-17 19:09:20,577 [INFO] USER:vooradi_harshith helper.py:651:resolve_project_path LOG: Path: 'C:/Users/vooradi_harshith/task1/task1/task03' was assigned to the parameter: 'project_path'
+2025-03-17 19:09:20,578 [INFO] USER:vooradi_harshith base_generator.py:67:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/vooradi_harshith/task1/task1/task03'
+2025-03-17 19:09:20,579 [INFO] USER:vooradi_harshith base_generator.py:87:_find_resources_by_type LOG: Looking for resource 'api_gateway' in meta
+2025-03-17 19:09:20,579 [INFO] USER:vooradi_harshith base_generator.py:93:_find_resources_by_type LOG: Found '{'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\deployment_resources.json': {'task3_api'}, 'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\app\\lambdas\\hello_world\\deployment_resources.json': set()}' inside with type 'api_gateway'
+2025-03-17 19:09:20,580 [INFO] USER:vooradi_harshith base_generator.py:103:_get_resource_meta_paths LOG: Looking for api_gateway 'task3_api' in meta...
+2025-03-17 19:09:20,580 [INFO] USER:vooradi_harshith base_generator.py:106:_get_resource_meta_paths LOG: Found 'task3_api' in meta from 'C:\Users\vooradi_harshith\task1\task1\task03\deployment_resources.json'
+2025-03-17 19:09:20,580 [INFO] USER:vooradi_harshith base_generator.py:108:_get_resource_meta_paths LOG: Found api_gateway 'task3_api' in these files: '['C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\deployment_resources.json']'
+2025-03-17 19:09:20,580 [INFO] USER:vooradi_harshith api_gateway_generator.py:180:write LOG: Adding resource '/hello' to api 'task3_api'...
+2025-03-17 19:09:20,580 [INFO] USER:vooradi_harshith api_gateway_generator.py:201:write LOG: Adding resource '/hello' to api 'task3_api'...
+2025-03-17 19:09:20,581 [INFO] USER:vooradi_harshith base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-17 19:09:20,581 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object 'False' of the class '<class 'bool'>' for param 'enable_cors'
+2025-03-17 19:09:20,581 [INFO] USER:vooradi_harshith meta.py:336:api_gateway_resource LOG: Resource '/hello' was added to API gateway 'task3_api' successfully
+2025-03-17 19:09:20,582 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage api_gateway_resource, elapsed time: 0:00:00.003689
+2025-03-17 19:09:27,629 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:09:29,791 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:09:30,899 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:09:30,899 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:09:31,241 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:09:31,241 [INFO] USER:vooradi_harshith helper.py:647:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-03-17 19:09:31,244 [INFO] USER:vooradi_harshith helper.py:651:resolve_project_path LOG: Path: 'C:/Users/vooradi_harshith/task1/task1/task03' was assigned to the parameter: 'project_path'
+2025-03-17 19:09:31,245 [INFO] USER:vooradi_harshith base_generator.py:67:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/vooradi_harshith/task1/task1/task03'
+2025-03-17 19:09:31,246 [INFO] USER:vooradi_harshith base_generator.py:87:_find_resources_by_type LOG: Looking for resource 'api_gateway' in meta
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith base_generator.py:93:_find_resources_by_type LOG: Found '{'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\deployment_resources.json': {'task3_api'}, 'C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\app\\lambdas\\hello_world\\deployment_resources.json': set()}' inside with type 'api_gateway'
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith base_generator.py:103:_get_resource_meta_paths LOG: Looking for api_gateway 'task3_api' in meta...
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith base_generator.py:106:_get_resource_meta_paths LOG: Found 'task3_api' in meta from 'C:\Users\vooradi_harshith\task1\task1\task03\deployment_resources.json'
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith base_generator.py:108:_get_resource_meta_paths LOG: Found api_gateway 'task3_api' in these files: '['C:\\Users\\vooradi_harshith\\task1\\task1\\task03\\deployment_resources.json']'
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith api_gateway_generator.py:53:get_meta_with_resource LOG: Found resource '/hello' in api 'task3_api' in file 'C:\Users\vooradi_harshith\task1\task1\task03\deployment_resources.json'
+2025-03-17 19:09:31,247 [INFO] USER:vooradi_harshith api_gateway_generator.py:258:write LOG: Adding method 'GET' to resource '/hello' to api 'task3_api'...
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:115:_validate_lambda_existence LOG: Validating existence of lambda: hello_world
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:121:_validate_lambda_existence LOG: Validation successfully finished, lambda exists
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:37:_resolve_configuration LOG: Resolving not required params...
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:53:_resolve_configuration LOG: Setting default value 'NONE' for param 'authorization_type'
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:57:_resolve_configuration LOG: Setting given value 'lambda' for param 'integration_type'
+2025-03-17 19:09:31,248 [INFO] USER:vooradi_harshith base_generator.py:57:_resolve_configuration LOG: Setting given value 'hello_world' for param 'lambda_name'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object 'False' of the class '<class 'bool'>' for param 'api_key_required'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'method_request_parameters'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'integration_request_body_template'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'responses'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:44:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'integration_responses'
+2025-03-17 19:09:31,249 [INFO] USER:vooradi_harshith base_generator.py:53:_resolve_configuration LOG: Setting default value 'True' for param 'default_error_pattern'
+2025-03-17 19:09:31,250 [INFO] USER:vooradi_harshith meta.py:386:api_gateway_resource_method LOG: Method 'GET' was added to API gateway resource '/hello' successfully
+2025-03-17 19:09:31,250 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage api_gateway_resource_method, elapsed time: 0:00:00.004879
+2025-03-17 19:11:09,243 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:11:11,392 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:11:12,515 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:12,515 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:12,869 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:14,191 [INFO] USER:vooradi_harshith handlers.py:142:test LOG: Running tests...
+2025-03-17 19:11:14,192 [INFO] USER:vooradi_harshith handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/vooradi_harshith/task1/task1/task03'.
+2025-03-17 19:11:14,192 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00.001533
+2025-03-17 19:11:14,199 [INFO] USER:vooradi_harshith handlers.py:993:assemble LOG: Building artifacts, bundle: task03_250317.191112
+2025-03-17 19:11:14,200 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\jsrc\main\java\com\task03.
+2025-03-17 19:11:14,200 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\src\lambdas.
+2025-03-17 19:11:14,200 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\app\lambdas.
+2025-03-17 19:11:14,201 [INFO] USER:vooradi_harshith project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'hello_world' to the pending ProjectState.
+2025-03-17 19:11:14,201 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\dnapp\lambdas.
+2025-03-17 19:11:14,202 [INFO] USER:vooradi_harshith project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\vooradi_harshith\task1\task1\task03\swagger_src.
+2025-03-17 19:11:14,202 [INFO] USER:vooradi_harshith project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\vooradi_harshith\task1\task1\task03\appsync_src.
+2025-03-17 19:11:14,209 [INFO] USER:vooradi_harshith handlers.py:821:assemble_node LOG: Command assemble node: project_path: app 
+2025-03-17 19:11:14,210 [INFO] USER:vooradi_harshith nodejs.py:58:assemble_node_lambdas LOG: Going to package lambdas starting by path C:\Users\vooradi_harshith\task1\task1\task03\app
+2025-03-17 19:11:14,210 [INFO] USER:vooradi_harshith nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\Users\vooradi_harshith\task1\task1\task03\app\lambdas\hello_world
+2025-03-17 19:11:14,516 [INFO] USER:vooradi_harshith nodejs.py:123:install_requirements LOG: Artifacts path: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev\bundles\task03_250317.191112\hello_world-1.0
+2025-03-17 19:11:15,099 [INFO] USER:vooradi_harshith helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 313ms
+
+found 0 vulnerabilities
+
+npm warn old lockfile
+npm warn old lockfile The package-lock.json file was created with an old version of npm,
+npm warn old lockfile so supplemental metadata must be fetched from the registry.
+npm warn old lockfile
+npm warn old lockfile This is a one-time fix-up, please be patient...
+npm warn old lockfile
+
+2025-03-17 19:11:15,100 [INFO] USER:vooradi_harshith nodejs.py:142:install_requirements LOG: No dependencies folder - nothing to copy.
+2025-03-17 19:11:15,106 [INFO] USER:vooradi_harshith handlers.py:830:assemble_node LOG: NodeJS artifacts were prepared successfully.
+2025-03-17 19:11:15,107 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage assemble_node, elapsed time: 0:00:00.897912
+2025-03-17 19:11:15,111 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:00.912102
+2025-03-17 19:11:15,116 [INFO] USER:vooradi_harshith handlers.py:1037:package_meta LOG: Package meta, bundle: task03_250317.191112
+2025-03-17 19:11:15,116 [INFO] USER:vooradi_harshith meta_processor.py:513:create_meta LOG: Bundle path: C:/Users/vooradi_harshith/task1/task1/task03/bundles/task03_250317.191112
+2025-03-17 19:11:15,119 [INFO] USER:vooradi_harshith helper.py:292:write_content_to_file LOG: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev/bundles/task03_250317.191112\build_meta.json file was created.
+2025-03-17 19:11:15,119 [INFO] USER:vooradi_harshith handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-17 19:11:15,120 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.003482
+2025-03-17 19:11:15,299 [INFO] USER:vooradi_harshith handlers.py:1083:upload LOG: Upload bundle: task03_250317.191112
+2025-03-17 19:11:15,640 [INFO] USER:vooradi_harshith bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-17 19:11:16,696 [INFO] USER:vooradi_harshith handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-17 19:11:16,697 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:01.569675
+2025-03-17 19:11:16,707 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage build, elapsed time: 0:00:03.837572
+2025-03-17 19:11:21,796 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:11:23,962 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:11:25,481 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:25,481 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:25,850 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:27,574 [INFO] USER:vooradi_harshith handlers.py:142:test LOG: Running tests...
+2025-03-17 19:11:27,574 [INFO] USER:vooradi_harshith handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/vooradi_harshith/task1/task1/task03'.
+2025-03-17 19:11:27,575 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00.001647
+2025-03-17 19:11:27,584 [INFO] USER:vooradi_harshith handlers.py:993:assemble LOG: Building artifacts, bundle: task03_250317.191125
+2025-03-17 19:11:27,584 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\jsrc\main\java\com\task03.
+2025-03-17 19:11:27,585 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\src\lambdas.
+2025-03-17 19:11:27,585 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\app\lambdas.
+2025-03-17 19:11:27,585 [INFO] USER:vooradi_harshith project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'nodejs' lambda:'hello_world' to the pending ProjectState.
+2025-03-17 19:11:27,585 [INFO] USER:vooradi_harshith project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\vooradi_harshith\task1\task1\task03\dnapp\lambdas.
+2025-03-17 19:11:27,586 [INFO] USER:vooradi_harshith project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\vooradi_harshith\task1\task1\task03\swagger_src.
+2025-03-17 19:11:27,586 [INFO] USER:vooradi_harshith project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\vooradi_harshith\task1\task1\task03\appsync_src.
+2025-03-17 19:11:27,596 [INFO] USER:vooradi_harshith handlers.py:821:assemble_node LOG: Command assemble node: project_path: app 
+2025-03-17 19:11:27,596 [INFO] USER:vooradi_harshith nodejs.py:58:assemble_node_lambdas LOG: Going to package lambdas starting by path C:\Users\vooradi_harshith\task1\task1\task03\app
+2025-03-17 19:11:27,597 [INFO] USER:vooradi_harshith nodejs.py:64:assemble_node_lambdas LOG: Going to build artifact in: C:\Users\vooradi_harshith\task1\task1\task03\app\lambdas\hello_world
+2025-03-17 19:11:27,926 [INFO] USER:vooradi_harshith nodejs.py:123:install_requirements LOG: Artifacts path: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev\bundles\task03_250317.191125\hello_world-1.0
+2025-03-17 19:11:28,495 [INFO] USER:vooradi_harshith helper.py:107:execute_command_by_path LOG: Running the command "npm install"
+
+up to date, audited 1 package in 314ms
+
+found 0 vulnerabilities
+
+
+2025-03-17 19:11:28,496 [INFO] USER:vooradi_harshith nodejs.py:142:install_requirements LOG: No dependencies folder - nothing to copy.
+2025-03-17 19:11:28,504 [INFO] USER:vooradi_harshith handlers.py:830:assemble_node LOG: NodeJS artifacts were prepared successfully.
+2025-03-17 19:11:28,505 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage assemble_node, elapsed time: 0:00:00.909146
+2025-03-17 19:11:28,512 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:00.927852
+2025-03-17 19:11:28,518 [INFO] USER:vooradi_harshith handlers.py:1037:package_meta LOG: Package meta, bundle: task03_250317.191125
+2025-03-17 19:11:28,518 [INFO] USER:vooradi_harshith meta_processor.py:513:create_meta LOG: Bundle path: C:/Users/vooradi_harshith/task1/task1/task03/bundles/task03_250317.191125
+2025-03-17 19:11:28,520 [INFO] USER:vooradi_harshith helper.py:292:write_content_to_file LOG: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev/bundles/task03_250317.191125\build_meta.json file was created.
+2025-03-17 19:11:28,521 [INFO] USER:vooradi_harshith handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-17 19:11:28,521 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.003268
+2025-03-17 19:11:28,692 [INFO] USER:vooradi_harshith handlers.py:1083:upload LOG: Upload bundle: task03_250317.191125
+2025-03-17 19:11:29,068 [INFO] USER:vooradi_harshith bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-17 19:11:30,183 [INFO] USER:vooradi_harshith handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-17 19:11:30,183 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:01.655867
+2025-03-17 19:11:30,191 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage build, elapsed time: 0:00:04.340503
+2025-03-17 19:11:37,389 [INFO] USER:vooradi_harshith handlers.py:106:syndicate LOG: Configuration used: C:\Users\vooradi_harshith\task1\task1\task03\.syndicate-config-dev
+2025-03-17 19:11:39,534 [INFO] USER:vooradi_harshith processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-17 19:11:40,714 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:40,714 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:41,080 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:41,442 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:41,442 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:41,824 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:41,824 [INFO] USER:vooradi_harshith helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: task03
+2025-03-17 19:11:42,196 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:42,197 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:42,561 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:42,562 [INFO] USER:vooradi_harshith helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: task03_250317.191125
+2025-03-17 19:11:42,925 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:42,925 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:43,295 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:43,666 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:43,666 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:44,029 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-17 19:11:46,094 [INFO] USER:vooradi_harshith deployment_processor.py:448:create_deployment_resources LOG: The latest deployment has status succeeded. Loaded output:
+ {
+    "arn:aws:iam::890742610830:policy/cmtr-2034f917-lambda-basic-execution": {
+        "resource_name": "cmtr-2034f917-lambda-basic-execution",
+        "resource_meta": {
+            "policy_content": {
+                "Statement": [
+                    {
+                        "Action": [
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents",
+                            "dynamodb:GetItem",
+                            "dynamodb:Query",
+                            "dynamodb:PutItem",
+                            "dynamodb:Batch*",
+                            "dynamodb:DeleteItem",
+                            "ssm:PutParameter",
+                            "ssm:GetParameter",
+                            "kms:Decrypt"
+                        ],
+                        "Effect": "Allow",
+                        "Resource": "*"
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "resource_type": "iam_policy",
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "2034f917"
+            }
+        },
+        "description": {
+            "PolicyName": "cmtr-2034f917-lambda-basic-execution",
+            "PolicyId": "ANPA46ZDFTOHMNBA3PTSQ",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 1,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2025-03-17T12:03:34+00:00",
+            "UpdateDate": "2025-03-17T12:03:34+00:00",
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-11"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "2034f917"
+                }
+            ]
+        }
+    },
+    "arn:aws:iam::890742610830:role/cmtr-2034f917-hello_world-role": {
+        "resource_name": "cmtr-2034f917-hello_world-role",
+        "resource_meta": {
+            "predefined_policies": [],
+            "principal_service": "lambda",
+            "custom_policies": [
+                "cmtr-2034f917-lambda-basic-execution"
+            ],
+            "resource_type": "iam_role",
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "2034f917"
+            }
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-2034f917-hello_world-role",
+            "RoleId": "AROA46ZDFTOHOD74ZUVH4",
+            "CreateDate": "2025-03-17T12:03:35+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-11"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "2034f917"
+                }
+            ],
+            "RoleLastUsed": {}
+        }
+    },
+    "arn:aws:lambda:eu-west-1:890742610830:function:cmtr-2034f917-hello_world:dev": {
+        "resource_name": "cmtr-2034f917-hello_world",
+        "resource_meta": {
+            "version": "1.0",
+            "name": "cmtr-2034f917-hello_world",
+            "func_name": "lambdas/hello_world/index.handler",
+            "resource_type": "lambda",
+            "iam_role_name": "cmtr-2034f917-hello_world-role",
+            "runtime": "nodejs20.x",
+            "memory": 128,
+            "timeout": 100,
+            "lambda_path": "lambdas\\hello_world",
+            "dependencies": [],
+            "event_sources": [],
+            "env_variables": {},
+            "publish_version": true,
+            "alias": "dev",
+            "url_config": {},
+            "ephemeral_storage": 512,
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "2034f917"
+            },
+            "s3_path": "task3_250317.175021/hello_world-1.0.zip",
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "f3f048ea-4d8d-44eb-8a27-ba82de92aae9",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Mon, 17 Mar 2025 12:20:49 GMT",
+                    "content-type": "application/json",
+                    "content-length": "2845",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "f3f048ea-4d8d-44eb-8a27-ba82de92aae9"
+                },
+                "RetryAttempts": 0
+            },
+            "Configuration": {
+                "FunctionName": "cmtr-2034f917-hello_world",
+                "Runtime": "nodejs20.x",
+                "Role": "arn:aws:iam::890742610830:role/cmtr-2034f917-hello_world-role",
+                "Handler": "lambdas/hello_world/index.handler",
+                "CodeSize": 1492,
+                "Description": " ",
+                "Timeout": 100,
+                "MemorySize": 128,
+                "LastModified": "2025-03-17T12:03:46.071+0000",
+                "CodeSha256": "7MWxTRwgHSZBEvIXQeY32/LhVUgeRhiGPqHUxhBeckE=",
+                "Version": "$LATEST",
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "RevisionId": "f56a98a3-0db8-4f8d-81b1-6fcb76dd00b0",
+                "Layers": [],
+                "State": "Active",
+                "LastUpdateStatus": "Successful",
+                "PackageType": "Zip",
+                "Architectures": [
+                    "x86_64"
+                ],
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "SnapStart": {
+                    "ApplyOn": "None",
+                    "OptimizationStatus": "Off"
+                },
+                "RuntimeVersionConfig": {
+                    "RuntimeVersionArn": "arn:aws:lambda:eu-west-1::runtime:9d084cce5cc7578c503eb8fe4bf7891c94c8f5f0ccb036f3f8c3a01cf5212db6"
+                }
+            },
+            "Code": {
+                "RepositoryType": "S3",
+                "Location": "https://awslambda-eu-west-1-tasks.s3.eu-west-1.amazonaws.com/snapshots/890742610830/cmtr-2034f917-hello_world-6b1bae9c-54a4-41e4-bcd4-3948e8c1d533?versionId=5DI6ThJaRRFkEOHuNc1jLftSEAHkVEuQ&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJIMEYCIQDh3GJplVAdLG4pinoxJzudoBFrwBeYkceIMykA1HSLiQIhAL4PlM10pDv47vRYiPRFQDUKFIgiYa%2B0bmEduEOuAejeKokCCEMQBBoMOTU0MzY5MDgyNTExIgxQdDhme0MMYJPUoO8q5gH6a5xg7tn7l69yfnyCCvBORixuX0lc%2FJZHVD9z43a6WKn9yBv9KaAPfB%2BI3KzNlwLZOEQ%2Fpv%2BVLtWkeXTm6UxzcsQLdbNHcfp5XKfyyjfOFIeqE6I3L59%2BfhSEUM08bNxOpZQXvsOksupxG6QvXciTm6U%2FywLkWaLymFgz5xWDerZals4kQ1L%2F%2BMRThVGMGUA9XRjXTtM8q3sI4TUSqAvpIlynLSraxl%2BNffUuPpgM1wYfHZdo34wzZ4Nwu%2FhVWdGRYfvO7%2BJz0oPtz2tQUMvr94wwJOvkOJ7SXn2hVUrtkw9RBQROdjCc6d%2B%2BBjqOAdq58sp2znwQ5lDBPJCjI7%2BCjb7ANSCy1JrWEJdSY2ydB3UQuopgRhmY8E0x4mB6hyAqEpSSwtTfJlgaquDzygA1oCXMHxyfjTnRHRWGpqeoBOtIy5aHo%2FljrLLsuLovKftCHBbZ%2FenbOvpJVyMDXfCTNvxC5pSgef1W8Nwoo7p31pl6BRUPktspfR28EyI%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250317T122049Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA54NGUQSH3PZXQIS4%2F20250317%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=74fcad47ef2b6f8a7950de3849d6146cbcd69d25337058715c2f78c9c267d9ce"
+            },
+            "Tags": {
+                "run_id": "JAP-11",
+                "user_id": "2034f917",
+                "run_type": "stm",
+                "type": "user"
+            }
+        }
+    },
+    "arn:aws:apigateway:eu-west-1::/restapis/zc2n037mu8": {
+        "resource_name": "cmtr-2034f917-task3_api",
+        "resource_meta": {
+            "resource_type": "api_gateway",
+            "deploy_stage": "api",
+            "dependencies": [],
+            "resources": {
+                "/hello": {
+                    "enable_cors": false,
+                    "GET": {
+                        "authorization_type": "NONE",
+                        "integration_type": "lambda",
+                        "lambda_name": "cmtr-2034f917-hello_world",
+                        "api_key_required": false,
+                        "method_request_parameters": {},
+                        "integration_request_body_template": {},
+                        "responses": [],
+                        "integration_responses": [],
+                        "default_error_pattern": true
+                    }
+                }
+            },
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "2034f917"
+            },
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "cb8b5181-bffc-429d-b140-123d057ccbe8",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Mon, 17 Mar 2025 12:20:50 GMT",
+                    "content-type": "application/json",
+                    "content-length": "301",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "cb8b5181-bffc-429d-b140-123d057ccbe8",
+                    "x-amz-apigw-id": "HkgBcJAMDoEEdlQ="
+                },
+                "RetryAttempts": 0
+            },
+            "id": "zc2n037mu8",
+            "name": "cmtr-2034f917-task3_api",
+            "createdDate": "2025-03-17T17:33:50+05:30",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "EDGE"
+                ]
+            },
+            "tags": {
+                "run_id": "JAP-11",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "2034f917"
+            },
+            "disableExecuteApiEndpoint": false,
+            "resources": [
+                {
+                    "id": "3pum1urjjd",
+                    "path": "/"
+                },
+                {
+                    "id": "wmx4tt",
+                    "parentId": "3pum1urjjd",
+                    "pathPart": "hello",
+                    "path": "/hello",
+                    "resourceMethods": {
+                        "GET": {}
+                    }
+                }
+            ]
+        }
+    }
+}
+2025-03-17 19:11:46,275 [INFO] USER:vooradi_harshith deployment_processor.py:466:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-03-17 19:11:46,275 [INFO] USER:vooradi_harshith deployment_processor.py:489:create_deployment_resources LOG: Going to deploy AWS resources
+2025-03-17 19:11:46,424 [INFO] USER:vooradi_harshith deployment_processor.py:74:_process_resources LOG: Processing iam_role resources
+2025-03-17 19:11:47,941 [WARNING] USER:vooradi_harshith iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-2034f917-hello_world-role exists.
+2025-03-17 19:11:47,942 [INFO] USER:vooradi_harshith deployment_processor.py:74:_process_resources LOG: Processing lambda resources
+2025-03-17 19:11:49,806 [WARNING] USER:vooradi_harshith lambda_resource.py:313:_create_lambda_from_meta LOG: cmtr-2034f917-hello_world lambda exists.
+2025-03-17 19:11:49,807 [INFO] USER:vooradi_harshith deployment_processor.py:88:_process_resources LOG: Processing api_gateway resources
+2025-03-17 19:11:51,119 [INFO] USER:vooradi_harshith api_gateway_resource.py:756:describe_api_resources LOG: Described cmtr-2034f917-task3_api API Gateway.
+2025-03-17 19:11:51,119 [INFO] USER:vooradi_harshith api_gateway_resource.py:370:_create_api_gateway_from_meta LOG: Api gateway with name 'cmtr-2034f917-task3_api' exists. Returning
+2025-03-17 19:11:51,120 [INFO] USER:vooradi_harshith deployment_processor.py:540:create_deployment_resources LOG: AWS resources were deployed successfully
+2025-03-17 19:11:51,121 [INFO] USER:vooradi_harshith deployment_processor.py:543:create_deployment_resources LOG: Going to apply dynamic changes
+2025-03-17 19:11:51,121 [INFO] USER:vooradi_harshith deployment_processor.py:545:create_deployment_resources LOG: Dynamic changes were applied successfully
+2025-03-17 19:11:51,122 [INFO] USER:vooradi_harshith deployment_processor.py:547:create_deployment_resources LOG: Going to apply post deployment tags
+2025-03-17 19:11:51,128 [INFO] USER:vooradi_harshith group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-03-17 19:11:51,128 [INFO] USER:vooradi_harshith deployment_processor.py:550:create_deployment_resources LOG: Going to create deploy output
+2025-03-17 19:11:51,687 [INFO] USER:vooradi_harshith bundle_processor.py:71:create_deploy_output LOG: Output file with name task03_250317.191125/outputs/task03.json has been created
+2025-03-17 19:11:51,687 [INFO] USER:vooradi_harshith deployment_processor.py:560:create_deployment_resources LOG: Deploy output for task03 was created.
+2025-03-17 19:11:51,688 [INFO] USER:vooradi_harshith handlers.py:347:deploy LOG: Backend resources were deployed.
+2025-03-17 19:11:51,688 [INFO] USER:vooradi_harshith helper.py:330:timed LOG: Stage deploy, elapsed time: 0:00:07.658649
+2025-03-17 19:11:52,073 [INFO] USER:vooradi_harshith project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-17 19:11:52,074 [INFO] USER:vooradi_harshith project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-17 19:11:52,442 [INFO] USER:vooradi_harshith sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
